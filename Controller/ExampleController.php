@@ -21,6 +21,7 @@ class ExampleController extends Controller
     /**
      * @Route("/{reference}/{title}", requirements={"reference" = "(\d+\.?)+"})
      * @Template
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
     public function referenceAction($reference, $title = null)
     {
@@ -76,6 +77,7 @@ class ExampleController extends Controller
      * Returns a KSS Parser loaded with the CSS files from the bundle
      *
      * @return Parser
+     * @throws \InvalidArgumentException
      */
     protected function getKssParser()
     {
