@@ -12,13 +12,13 @@
     {% endfor %}
 
     <p>The blocks above were created with a simple template call:</p>
-    <pre><code>{% raw %}{% for childSection in sections %}
+    <pre><code>{% verbatim %}{% for childSection in sections %}
     {% include 'KssBridgeBundle:Blocks:block.html.twig' with
         {
             'section' : childSection
         }
     %}
-{% endfor %}{% endraw %}</code></pre>
+{% endfor %}{% endverbatim %}</code></pre>
 
     <p>
       Take a look at the source code to this Symfony2 Bundle for more details. The goal
