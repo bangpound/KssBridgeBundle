@@ -19,10 +19,9 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Kss\\Bundle\\BridgeBundle": "" }
+        "psr-4": { "Kss\\Bundle\\BridgeBundle\\": "" }
     },
     "suggest": {
     	"symfony/assetic-bundle": "Needed to run the KSS Demo Examples"
-    },
-    "target-dir": "Kss/Bundle/BridgeBundle"
+    }
 }
